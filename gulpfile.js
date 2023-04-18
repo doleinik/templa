@@ -12,7 +12,7 @@ global.app = {
 }
 
 import { copy } from "./gulp/tasks/copy.js";
-import { reset, resetFont, resetImages, resetFontFile } from "./gulp/tasks/reset.js";
+import { reset, resetFontFile } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
 import { scss } from "./gulp/tasks/scss.js";

@@ -35,7 +35,7 @@ export const scss = () => {
         // Not compres copy
         // .pipe(app.gulp.dest(app.path.build.css))
         .pipe(cleanCss())
-        .pipe(rename({ extname: ".min.css" }))
-        .pipe(app.gulp.dest(app.path.build.css))
+        .pipe(rename({ extname: ".css" }))
+        .pipe(app.gulp.dest(app.path.build.scss))
         .pipe(app.plugins.browsersync.stream());
 }

@@ -6,8 +6,9 @@
     "type": "module",
     "scripts": {
         "font": "gulp fonts",
-        "tailwind": "npx tailwindcss -i ./src/stylesheets/index.css -o ./build/assets/css/index.css --watch",
-        "dev": "gulp"
+        "tailwind": "npx tailwindcss -i ./src/stylesheets/style.css -o ./build/assets/css/index.css --watch",
+        "gulp": "gulp",
+        "dev": "concurrently --kill-others \"npm run gulp\" \"npm run tailwind\""
     },
     "author": "",
     "license": "ISC",
@@ -19,6 +20,7 @@
     },
     "devDependencies": {
         "browser-sync": "^2.27.9",
+        "concurrently": "^8.0.1",
         "del": "^6.0.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^8.0.0",
